@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.active {
+  @apply  border-b-2 border-primary-500 text-primary-500;
+}
