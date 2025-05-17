@@ -1,54 +1,115 @@
-# React + TypeScript + Vite
+# Night Breeze Inn Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the official website for the Night Breeze Inn, a modern web application built with React, TypeScript, Vite, and Tailwind CSS. It provides a clean and responsive interface for users to learn about the inn and get in touch.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **Responsive Design:** Adapts to various screen sizes using Tailwind CSS.
+* **Modern Tech Stack:** Built with React, TypeScript, and Vite for a fast and efficient development experience.
+* **Component-Based Architecture:** Organized into reusable React components.
+* **Styling with Tailwind CSS:** Utility-first CSS framework for rapid UI development.
+* **Iconography:** Uses Font Awesome for clear and consistent icons.
+* **Linting & Formatting:** Configured with ESLint and Prettier for code quality and consistency.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* **Frontend:** React 19, TypeScript
+* **Build Tool:** Vite
+* **Styling:** Tailwind CSS, PostCSS
+* **Icons:** Font Awesome
+* **Linting:** ESLint
+* **Formatting:** Prettier
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🚀 Getting Started
+
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+* Node.js (v18.x or later recommended)
+* npm (v8.x or later, usually comes with Node.js)
+
+### Installation
+
+1. **Clone the repository:**
+
+   ```bash
+    git clone https://github.com/Night-Breeze-Inn/website
+    cd website
+    ```
+
+2. **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+## 📜 Available Scripts
+
+In the project directory, you can run the following scripts:
+
+* **`npm run dev`**
+    Runs the app in development mode with HMR (Hot Module Replacement).
+    Open [http://localhost:5173](http://localhost:5173) (or the port shown in your terminal) to view it in the browser.
+
+* **`npm run build`**
+    Builds the app for production to the `dist` folder.
+    It correctly bundles React in production mode and optimizes the build for the best performance. This script also runs TypeScript checks (`tsc -b`).
+
+* **`npm run lint`**
+    Lints the project files using ESLint to check for code quality and potential errors.
+
+* **`npm run preview`**
+    Serves the production build from the `dist` folder locally. This is useful for testing the production build before deployment.
+
+## 📂 Project Structure
+
+```
+website/
+├── .git/
+├── .gitignore
+├── .prettierignore
+├── .prettierrc.yaml # Prettier configuration
+├── eslint.config.js # ESLint configuration
+├── index.html # Main HTML entry point
+├── package-lock.json
+├── package.json # Project dependencies and scripts
+├── postcss.config.cjs # PostCSS configuration (for Tailwind)
+├── README.md # This file
+├── tailwind.config.cjs # Tailwind CSS configuration
+├── tsconfig.app.json # TypeScript configuration for the app
+├── tsconfig.json # Main TypeScript configuration
+├── tsconfig.node.json # TypeScript configuration for Node.js specific files (e.g., vite.config)
+├── vite.config.ts # Vite build tool configuration
+├── node_modules/
+├── public/
+│ └── images/ # Static assets like logos
+│ ├── Logo-dark.png
+│ ├── logo-light.png
+│ └── Logo.png
+└── src/
+├── App.css # Global styles for App component (if any)
+├── App.tsx # Main application component
+├── index.css # Global styles and Tailwind directives
+├── main.tsx # Main entry point for React application
+├── vite-env.d.ts # Vite environment type definitions
+├── components/ # Reusable UI components (like header, footer, etc.)
+└── pages/ # Page-level components
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🔧 Configuration Files
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+* **`vite.config.ts`**: Configures Vite, the build tool. Includes plugins like `@vitejs/plugin-react-swc`.
+* **`tailwind.config.cjs`**: Customizes Tailwind CSS, including fonts, colors, and plugins.
+* **`postcss.config.cjs`**: Configures PostCSS, used by Tailwind CSS for processing styles.
+* **`eslint.config.js`**: Defines ESLint rules for code linting and quality checks.
+* **`.prettierrc.yaml`**: Specifies Prettier options for consistent code formatting.
+* **`tsconfig.json` (and its variants)**: Manages TypeScript compiler options for the project.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🎨 Styling
+
+The project uses Tailwind CSS for styling.
+
+* Global styles and Tailwind directives are imported in `src/index.css`.
+* Custom Tailwind theme (colors, fonts) is defined in `tailwind.config.cjs`.
+* A custom `.active` class for navigation links is defined in `src/index.css`.
