@@ -64,7 +64,7 @@ In the project directory, you can run the following scripts:
 
 ## 📂 Project Structure
 
-```
+```md
 website/
 ├── .git/
 ├── .gitignore
