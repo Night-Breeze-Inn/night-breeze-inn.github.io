@@ -34,8 +34,8 @@ Follow these instructions to get a copy of the project up and running on your lo
 1. **Clone the repository:**
 
    ```bash
-    git clone https://github.com/Night-Breeze-Inn/website
-    cd website
+    git clone https://github.com/Night-Breeze-Inn/night-breeze-inn.github.io.git
+    cd night-breeze-inn.github.io
     ```
 
 2. **Install dependencies:**
@@ -65,7 +65,7 @@ In the project directory, you can run the following scripts:
 ## 📂 Project Structure
 
 ```md
-website/
+night-breeze-inn.github.io/
 ├── .git/
 ├── .gitignore
 ├── .prettierignore
