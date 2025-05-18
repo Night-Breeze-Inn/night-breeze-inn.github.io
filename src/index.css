@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  @apply m-0 p-0 box-border font-main;
+}
+
 .active {
   @apply  border-b-2 border-primary-500 text-primary-500;
 }

@@ -6,7 +6,7 @@ function Header() {
   const activeClass = "active";
 
   return (
-    <header className="bg-gray-100 flex flex-col items-center justify-around p-4 font-main text-primary-500 shadow-md md:flex-row">
+    <header className="flex flex-col items-center justify-around bg-gray-100 p-4 text-primary-600 shadow-md md:flex-row">
       <NavLink
         to="/"
         className={({ isActive }) => `${isActive ? "" : ""}m-3 flex flex-row items-center text-2xl font-bold`}>
