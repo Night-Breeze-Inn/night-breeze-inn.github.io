@@ -6,6 +6,10 @@
   @apply m-0 p-0 box-border font-main;
 }
 
+body {
+  @apply bg-gray-50;
+}
+
 .active {
   @apply  border-b-2 border-primary-500 text-primary-500;
 }
