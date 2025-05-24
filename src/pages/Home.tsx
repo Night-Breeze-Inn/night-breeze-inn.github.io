@@ -8,6 +8,18 @@ const projects = [
     image:
       "https://github.com/Night-Breeze-Inn/Draconae-Project/blob/main/src/main/resources/com/nightbreeze/images/logo-Draconae-Project.svg?raw=true",
   },
+  {
+    name: "Atlas of Worlds",
+    description: "Worldbuilding/Lore Management Tool for TTRPGs",
+    link: "https://github.com/Night-Breeze-Inn/Atlas-of-Worlds",
+    image: "",
+  },
+  {
+    name: "Tome of Legends",
+    description: "D&D GM Toolkit",
+    link: "https://github.com/Night-Breeze-Inn/Tome-of-Legends",
+    image: "",
+  },
 ];
 
 function Home() {

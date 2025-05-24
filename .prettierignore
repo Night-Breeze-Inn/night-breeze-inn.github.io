@@ -19,6 +19,3 @@ yarn.lock
 # Version control
 .git/
 .svn/
-
-# Specific file types to ignore for formatting
-*.md
