@@ -50,6 +50,12 @@ function Header() {
           </li>
         </ul>
       </nav>
+
+      <div className="mt-4 flex space-x-4 md:mt-0">
+        <a href="https://github.com/Night-Breeze-Inn/night-breeze-inn.github.io">
+          <img src="/github/github-mark.svg" alt="GitHub" className="inline-block h-6 w-6" />
+        </a>
+      </div>
     </header>
   );
 }
